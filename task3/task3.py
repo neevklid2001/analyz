@@ -41,12 +41,13 @@ def task(csvString):
                 if elem[0]==a:
                   if elem[1] not in r5:
                     r5.append(elem[1])
-                    a=elem[1]
+                    a1=elem[1]
                 if elem[0]==b:
                   if elem[1] not in r5:
                     r5.append(elem[1])
-                    b=elem[1]
-              
+                    b1=elem[1]
+              a=a1
+              b=b1
     res=[r1,r2,r3,r4,r5]
     for mas in res:
       mas.sort()   
