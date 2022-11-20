@@ -1,5 +1,8 @@
-def task(dataA,dataB):
+def task(str1,str2):
+  import json
   import numpy as np
+  dataA=json.loads(str1)
+  dataB=json.loads(str2)
   def mas(A):
     numb=[]
     for item in A:
