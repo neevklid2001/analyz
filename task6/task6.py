@@ -8,6 +8,7 @@ def task(csvString):
   out = []
   for row in reader:
     out.append(row)
+  out=np.array(out).T
   def get_table(out, col):
     table=np.zeros(np.array(out).shape)
     for i in range(table.shape[1]):
